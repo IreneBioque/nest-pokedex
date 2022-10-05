@@ -24,20 +24,20 @@ describe('PokemonController', () => {
         {
           provide: PokemonService,
           useValue: {
-            // findAll: jest.fn().mockResolvedValue([
-            //   {
-            //     name: 'Bulbasour',
-            //     no: 1,
-            //   },
-            //   {
-            //     name: 'Charmander',
-            //     no: 4,
-            //   },
-            //   {
-            //     name: 'Squirtel',
-            //     no: 7,
-            //   },
-            // ]),
+            findAll: jest.fn().mockResolvedValue([
+              {
+                name: 'Bulbasour',
+                no: 1,
+              },
+              {
+                name: 'Charmander',
+                no: 4,
+              },
+              {
+                name: 'Squirtel',
+                no: 7,
+              },
+            ]),
             create: jest.fn().mockResolvedValue(createpPokemonDto),
           },
         },
